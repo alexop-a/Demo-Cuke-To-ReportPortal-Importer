@@ -6,12 +6,26 @@
 	<artifactId>demo-rp-importer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
+	<name>Demo Cuke To ReportPortal Importer</name>
+	<description>A simple project which is a demo of cuke-to-reportal plugin and
+		how it can be used to import cucumber json reports to reportportal.</description>
+	<url>https://github.com/alexop-a/Demo-Cuke-To-ReportPortal-Importer</url>
+
+	<developers>
+		<developer>
+			<name>Andreas Alexopoulos</name>
+			<email>alexop.a@gmail.com</email>
+			<organization>alexop-a</organization>
+			<organizationUrl>https://alexop-a.github.io/</organizationUrl>
+		</developer>
+	</developers>
+
 	<properties>
 		<spring-boot.version>3.3.5</spring-boot.version>
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<maven-source-plugin.version>3.3.1</maven-source-plugin.version>
 		<lombok.version>1.18.34</lombok.version>
-		<cuke-to-reportportal.version>1.0.3</cuke-to-reportportal.version>
+		<cuke-to-reportportal.version>1.0.4</cuke-to-reportportal.version>
 	</properties>
 
 	<dependencyManagement>
