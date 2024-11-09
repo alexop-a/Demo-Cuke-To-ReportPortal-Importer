@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>io.github.alexop-a</groupId>
+	<artifactId>demo-rp-importer</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<spring-boot.version>3.3.5</spring-boot.version>
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<maven-source-plugin.version>3.3.1</maven-source-plugin.version>
+		<lombok.version>1.18.34</lombok.version>
+		<cuke-to-reportportal.version>1.0.3</cuke-to-reportportal.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring-boot.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<artifactId>cuke-to-reportportal</artifactId>
+			<groupId>io.github.alexop-a</groupId>
+			<version>${cuke-to-reportportal.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>${lombok.version}</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<pluginManagement>
+			<plugins>
+
+
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<release>17</release>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>${spring-boot.version}</version>
+			</plugin>
+		</plugins>
+	</build>
+</project>
