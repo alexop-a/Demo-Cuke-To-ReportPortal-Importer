@@ -1,0 +1,1 @@
+Importing one testrun with two json files. Report files are merged and imported as one launch
