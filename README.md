@@ -11,4 +11,5 @@ Update the `rp-cucumber-import.properties` in order to use your ReportPortal ins
 You can trigger the demo from command line by running:
 
     mvn spring-boot:run
-    
+
+Project requires Java17 in order to run.
